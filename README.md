@@ -35,23 +35,28 @@ Ambos datasets se han utilizado respetando sus condiciones de acceso y licencia.
 ---
 
 ## 3. Estructura del repositorio
-TFM/
-│
-├── notebooks/
-│   ├── Kaggle_EDA.ipynb          # Análisis exploratorio del dataset Kaggle
-│   ├── Kaggle_Prep.ipynb         # Preprocesamiento, split y balanceo (Kaggle)
-│   ├── Kaggle_train_val.ipynb    # Entrenamiento, validación y ajuste de hiperparámetros (Kaggle)
-│   ├── Kaggle_XAI.ipynb          # Interpretabilidad SHAP, XAIqi y XAIci (Kaggle)
-│   │
-│   ├── NHANES_EDA.ipynb          # Análisis exploratorio del subconjunto NHANES
-│   ├── NHANES_Prep.ipynb         # Preprocesamiento, split y balanceo (NHANES)
-│   ├── NHANES_train_val.ipynb    # Entrenamiento, validación y ajuste de hiperparámetros (NHANES)
-│   └── NHANES_XAI.ipynb          # Interpretabilidad SHAP, XAIqi y XAIci (NHANES)
-│
-├── requirements.txt
-└── README.md
 
-Cada bloque (Kaggle y NHANES) está dividido en cuatro notebooks numerados de forma implícita por su rol en el pipeline. La ejecución debe seguir el orden EDA → Prep → train_val → XAI.
+El repositorio se organiza en torno a una carpeta principal `notebooks/`, que contiene los ocho cuadernos del pipeline analítico, junto con el archivo de dependencias y el presente documento.
+
+**notebooks/** (cuadernos del pipeline analítico)
+
+Bloque Kaggle:
+- `Kaggle_EDA.ipynb`: análisis exploratorio del dataset Kaggle.
+- `Kaggle_Prep.ipynb`: preprocesamiento, split estratificado y técnicas de balanceo.
+- `Kaggle_train_val.ipynb`: entrenamiento, validación y ajuste de hiperparámetros de los cinco modelos.
+- `Kaggle_XAI.ipynb`: interpretabilidad SHAP y cálculo de XAIqi y XAIci.
+
+Bloque NHANES:
+- `NHANES_EDA.ipynb`: análisis exploratorio del subconjunto NHANES.
+- `NHANES_Prep.ipynb`: preprocesamiento, split estratificado y técnicas de balanceo.
+- `NHANES_train_val.ipynb`: entrenamiento, validación y ajuste de hiperparámetros de los cinco modelos.
+- `NHANES_XAI.ipynb`: interpretabilidad SHAP y cálculo de XAIqi y XAIci.
+
+**Archivos en la raíz:**
+- `requirements.txt`: dependencias exactas del entorno de ejecución.
+- `README.md`: documentación del repositorio.
+
+Cada bloque (Kaggle y NHANES) está dividido en cuatro cuadernos numerados de forma implícita por su rol en el pipeline. La ejecución debe seguir el orden EDA, Prep, train_val, XAI.I.
 
 ---
 
