@@ -1,7 +1,7 @@
 # Trabajo Fin de Máster
 ## Evaluación de la interpretabilidad de modelos de Machine Learning en la predicción de ictus mediante métricas de consenso intermodelo (XAIqi y XAIci)
 
-**Autor:** Álvaro Rodríguez González 
+**Autor:** Álvaro Rodríguez González      
 **Programa:** Máster Universitario en Bioinformática y Bioestadística (UOC)  
 **Curso académico:** 2025 - 2026
 
