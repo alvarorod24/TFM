@@ -2,7 +2,7 @@
 ## Evaluación de la interpretabilidad de modelos de Machine Learning en la predicción de ictus mediante métricas de consenso intermodelo (XAIqi y XAIci)
 
 **Autor:** Álvaro Rodríguez  
-**Programa:** Máster Universitario en Ciencia de Datos (UOC)  
+**Programa:** Máster Universitario en Bioinformática y Bioestadística (UOC)  
 **Curso académico:** 2025 - 2026
 
 ---
@@ -11,7 +11,7 @@
 
 Este repositorio contiene el código y los notebooks asociados al Trabajo Fin de Máster, cuyo objetivo es evaluar dos métricas de explicabilidad desarrolladas por el grupo de investigación del tutor, XAIqi (estabilidad y calidad de la importancia de cada variable) y XAIci (consistencia inter-modelo y complejidad de la tarea predictiva), aplicadas a la predicción de ictus a partir de datos públicos.
 
-El estudio adopta una perspectiva intermodelo, esto es, en lugar de seleccionar un único modelo óptimo se entrenan cinco algoritmos heterogéneos sobre cada dataset y las explicaciones SHAP resultantes se evalúan mediante métricas de consenso. Este enfoque permite analizar la interpretabilidad a tres niveles complementarios: complejidad de la tarea, robustez frente a perturbaciones del espacio de variables, y fiabilidad de las explicaciones generadas.
+El estudio adopta una perspectiva intermodelo, por lo que, en lugar de seleccionar un único modelo óptimo, se entrenan cinco algoritmos heterogéneos sobre cada dataset y las explicaciones SHAP resultantes se evalúan mediante métricas de consenso. Este enfoque permite analizar la interpretabilidad a tres niveles complementarios: complejidad de la tarea, robustez frente a perturbaciones del espacio de variables, y fiabilidad de las explicaciones generadas.
 
 ---
 
@@ -121,7 +121,7 @@ El archivo `requirements.txt` recoge las versiones exactas utilizadas en los exp
 
 ## 7. Reproducibilidad
 
-Todos los experimentos pueden reproducirse ejecutando los notebooks en el orden indicado en la sección 3. Se ha fijado `random_state = 24` en todos los procesos estocásticos (splits, balanceo, RandomizedSearchCV, inicialización de modelos). Los resultados pueden presentar variaciones residuales debidas a la aleatoriedad propia del entrenamiento de redes neuronales y a la estimación de SHAP mediante muestreo.
+Todos los experimentos pueden reproducirse ejecutando los notebooks en el orden indicado en la sección 3. Se ha fijado `random_state = 24` en todos los procesos estocásticos (splits, balanceo, RandomizedSearchCV, inicialización de modelos). Los resultados numéricos se reportan en la memoria. Los resultados pueden presentar variaciones residuales debidas a la aleatoriedad propia del entrenamiento de redes neuronales y a la estimación de SHAP mediante muestreo. 
 
 ---
 
